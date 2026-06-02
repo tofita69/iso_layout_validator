@@ -3,13 +3,13 @@ from ultralytics import YOLO
 def train_model():
     model = YOLO("yolo11n.pt") 
 
-    print("Starting YOLOv11 Training on CPU...")
+    print("Starting YOLOv11 Training on GPU...")
     print("Configuration:")
     print("  - Epochs: 150")
     print("  - Batch Size: 4")
     print("  - Image Size: 1024")
     print("  - Augmentation: Enabled (mosaic, mixup, flip, HSV, rotate)")
-    print("  - Device: CPU")
+    print("  - Device: GPU (cuda:0)")
     print("  - Patience: 20 (early stopping)")
     
     results = model.train(
@@ -17,7 +17,7 @@ def train_model():
         epochs=150,              # Increased from 50 for better convergence
         imgsz=1024,             # Image size
         batch=4,                # Batch size (adjust for your RAM)
-        device="cpu",           # CPU training
+        device=0,               # Use first CUDA GPU (cuda:0)
         name="yolov11_iso_cartouche_enhanced", 
         patience=20,            # Early stopping patience
         save=True,              # Save best model

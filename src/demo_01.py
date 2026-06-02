@@ -13,6 +13,9 @@ import numpy as np
 from ultralytics import YOLO
 import cv2
 
+# Minimum confidence accepted for detections shown in UI/cache
+MIN_CONFIDENCE = 0.77
+
 # Page configuration
 st.set_page_config(
     page_title="ISO Cartouche Extractor - Phase 1",
@@ -49,11 +52,14 @@ def load_yolo_model(model_name):
     """Load the selected YOLO model"""
     model_mapping = {
         "yolo11n.pt (Original)": "yolo11n.pt",
-        "yolo11n_v2_enhanced.pt (Enhanced)": "yolo11n_v2_enhanced.pt"
+        # Replace the old enhanced weights with the newly trained best checkpoint
+        "yolo11n_v2_enhanced.pt (Enhanced)": "runs/detect/yolov11_iso_cartouche_enhanced/weights/best.pt"
     }
     
     model_filename = model_mapping.get(model_name, "yolo11n.pt")
-    model_path = Path(__file__).parent.parent / model_filename
+    # Allow mapping values to be either a filename (relative to project root)
+    # or a relative path (e.g. runs/.../weights/best.pt).
+    model_path = (Path(__file__).parent.parent / model_filename).resolve()
     
     if not model_path.exists():
         st.error(f"YOLO model not found at {model_path}")
@@ -74,11 +80,13 @@ def load_yolo_model(model_name):
 def run_yolo_inference(image, model):
     """Run YOLO inference on an image and return results"""
     try:
-        # Convert PIL image to numpy array for inference
-        image_array = np.array(image)
+        # YOLO expects 3-channel input. Screenshots may be RGBA (4 channels),
+        # so normalize to RGB before converting to numpy.
+        image_rgb = image.convert("RGB")
+        image_array = np.array(image_rgb)
         
         # Run inference
-        results = model(image_array, conf=0.25)
+        results = model(image_array, conf=MIN_CONFIDENCE)
         
         return results
     except Exception as e:
@@ -137,6 +145,41 @@ def extract_cartouche_from_yolo(results, image_size):
     return cartouche_info
 
 
+def extract_all_detections_from_yolo(results, image_size, model):
+    """Extract all detections (title_block, notes, gdt_feature) from YOLO predictions."""
+    detections = []
+    if not results or len(results) == 0:
+        return detections
+
+    result = results[0]
+    if result.boxes is None or len(result.boxes) == 0:
+        return detections
+
+    class_names = model.names if hasattr(model, "names") else {}
+    boxes = result.boxes
+    for idx, box in enumerate(boxes):
+        cls_id = int(box.cls)
+        conf = float(box.conf)
+        x1, y1, x2, y2 = map(int, box.xyxy[0])
+        class_name = class_names.get(cls_id, f"class_{cls_id}")
+        detections.append(
+            {
+                "id": idx,
+                "class_id": cls_id,
+                "class_name": class_name,
+                "confidence": conf,
+                "bbox": [x1, y1, x2, y2],
+                "bbox_normalized": [
+                    x1 / image_size[0],
+                    y1 / image_size[1],
+                    x2 / image_size[0],
+                    y2 / image_size[1],
+                ],
+            }
+        )
+    return detections
+
+
 def draw_cartouche_box(image, cartouche_info):
     """Draw cartouche bounding box on the image"""
     if not cartouche_info["detected"] or cartouche_info["bbox"] is None:
@@ -154,6 +197,76 @@ def draw_cartouche_box(image, cartouche_info):
     draw.text((bbox[0] + 5, bbox[1] - 20), label, fill="lime")
     
     return image_copy
+
+
+def draw_all_detection_boxes(image, detections):
+    """Draw all detected classes with color-coded bounding boxes."""
+    if not detections:
+        return image
+
+    class_colors = {
+        "title_block": "lime",
+        "notes": "yellow",
+        "gdt_feature": "cyan",
+    }
+
+    image_copy = image.copy()
+    draw = ImageDraw.Draw(image_copy)
+    for det in detections:
+        bbox = det["bbox"]
+        class_name = det["class_name"]
+        color = class_colors.get(class_name, "orange")
+        label = f"{class_name} ({det['confidence']:.2f})"
+        draw.rectangle(bbox, outline=color, width=3)
+        draw.text((bbox[0] + 4, max(0, bbox[1] - 18)), label, fill=color)
+    return image_copy
+
+
+def cache_detection_crops(image, detections, source_key):
+    """Store cropped detections in session cache for quick review in sidebar."""
+    if "detection_cache" not in st.session_state:
+        st.session_state["detection_cache"] = {}
+
+    cache_items = []
+    for det in detections:
+        x1, y1, x2, y2 = det["bbox"]
+        crop = image.crop((x1, y1, x2, y2))
+        cache_items.append(
+            {
+                "class_name": det["class_name"],
+                "class_id": det["class_id"],
+                "confidence": det["confidence"],
+                "crop": crop,
+                "bbox": det["bbox"],
+            }
+        )
+
+    st.session_state["detection_cache"][source_key] = cache_items
+
+
+def display_detection_cache_sidebar():
+    """Render cached detection crops in the sidebar."""
+    st.sidebar.header("🗂️ Detection Cache")
+    cache = st.session_state.get("detection_cache", {})
+    if not cache:
+        st.sidebar.caption("No cached detections yet.")
+        return
+
+    latest_key = list(cache.keys())[-1]
+    items = cache[latest_key]
+    st.sidebar.caption(f"Latest: {latest_key}")
+    st.sidebar.caption(f"Cached crops: {len(items)}")
+
+    class_order = ["title_block", "notes", "gdt_feature"]
+    for cls in class_order:
+        class_items = [item for item in items if item["class_name"] == cls]
+        with st.sidebar.expander(f"{cls} ({len(class_items)})", expanded=False):
+            if not class_items:
+                st.caption("No detections.")
+                continue
+            for i, item in enumerate(class_items, start=1):
+                st.image(item["crop"], use_container_width=True)
+                st.caption(f"#{i} conf={item['confidence']:.2f} bbox={item['bbox']}")
 
 
 def display_yolo_results(cartouche_info, col):
@@ -325,22 +438,42 @@ if data_source == "Image Inference (YOLO)":
             if results:
                 # Extract cartouche information
                 cartouche_info = extract_cartouche_from_yolo(results, image.size)
-                
-                # Draw cartouche box on image
-                image_with_box = draw_cartouche_box(image, cartouche_info)
+                detections = extract_all_detections_from_yolo(results, image.size, model)
+
+                # Draw all detection boxes and cache crops for quick inspection
+                image_with_box = draw_all_detection_boxes(image, detections)
+                cache_detection_crops(image, detections, uploaded_image.name)
                 
                 # Display results in two columns
                 col1, col2 = st.columns(2)
                 
                 with col1:
-                    st.subheader("📷 Annotated Image")
+                    st.subheader("📷 Original Image")
+                    st.image(image, use_container_width=True)
+                with col2:
+                    st.subheader("🎨 Annotated Image")
                     st.image(image_with_box, use_container_width=True)
                 
-                display_yolo_results(cartouche_info, col2)
-                
-                # Show original image for comparison
-                with st.expander("🔍 Original Image (without annotations)"):
-                    st.image(image, use_container_width=True)
+                # Detection summary
+                st.subheader("🎯 Detection Summary")
+                if not detections:
+                    st.warning("No objects detected.")
+                else:
+                    count_title = sum(1 for d in detections if d["class_name"] == "title_block")
+                    count_notes = sum(1 for d in detections if d["class_name"] == "notes")
+                    count_gdt = sum(1 for d in detections if d["class_name"] == "gdt_feature")
+                    m1, m2, m3 = st.columns(3)
+                    m1.metric("Title Blocks", count_title)
+                    m2.metric("Notes", count_notes)
+                    m3.metric("GDT Features", count_gdt)
+
+                    for det in detections:
+                        st.markdown(
+                            f"- **{det['class_name']}** | conf: `{det['confidence']:.2f}` | bbox: `{det['bbox']}`"
+                        )
+
+                # Keep existing cartouche-focused panel for backward compatibility
+                display_yolo_results(cartouche_info, st.container())
 
 elif data_source == "Upload JSON":
     st.markdown("### 📤 Upload Technical Drawing Data")
@@ -423,6 +556,9 @@ else:  # Browse Synthetic Data
                         # Display raw JSON for reference
                         with st.expander("📄 Raw Data (JSON)"):
                             st.json(sheet_data)
+
+# Render detection cache panel in sidebar for all modes
+display_detection_cache_sidebar()
 
 # ============================================================================
 # FOOTER
