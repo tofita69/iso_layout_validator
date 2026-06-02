@@ -1,0 +1,101 @@
+{
+    "filename": "iso_sheet_62.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Parallelism",
+                "tolerance": "0.32",
+                "datums": [
+                    "D",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    1133,
+                    573,
+                    1463,
+                    633
+                ]
+            },
+            {
+                "symbol": "Circularity",
+                "tolerance": "0.11",
+                "datums": [
+                    "D",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    821,
+                    780,
+                    1151,
+                    840
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "0.32",
+                "datums": [
+                    "A",
+                    "C",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    409,
+                    513,
+                    799,
+                    573
+                ]
+            },
+            {
+                "symbol": "Concentricity",
+                "tolerance": "\u23000.17 (M)",
+                "datums": [
+                    "D"
+                ],
+                "bbox_pixels": [
+                    438,
+                    129,
+                    708,
+                    189
+                ]
+            },
+            {
+                "symbol": "Total Runout",
+                "tolerance": "\u23000.25",
+                "datums": [
+                    "A"
+                ],
+                "bbox_pixels": [
+                    1182,
+                    754,
+                    1452,
+                    814
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "0.15 (L)",
+                "datums": [
+                    "A"
+                ],
+                "bbox_pixels": [
+                    365,
+                    291,
+                    635,
+                    351
+                ]
+            }
+        ]
+    }
+}

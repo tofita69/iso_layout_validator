@@ -1,0 +1,87 @@
+{
+    "filename": "iso_sheet_114.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Parallelism",
+                "tolerance": "\u23000.27 (M)",
+                "datums": [
+                    "E",
+                    "D",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    828,
+                    637,
+                    1218,
+                    697
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "\u23000.26",
+                "datums": [
+                    "F"
+                ],
+                "bbox_pixels": [
+                    1099,
+                    295,
+                    1369,
+                    355
+                ]
+            },
+            {
+                "symbol": "Angularity",
+                "tolerance": "0.25 (M)",
+                "datums": [
+                    "B"
+                ],
+                "bbox_pixels": [
+                    765,
+                    725,
+                    1035,
+                    785
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "0.41 (L)",
+                "datums": [
+                    "E",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    725,
+                    353,
+                    1055,
+                    413
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "0.10",
+                "datums": [
+                    "D"
+                ],
+                "bbox_pixels": [
+                    229,
+                    499,
+                    499,
+                    559
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "filename": "iso_sheet_143.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Cylindricity",
+                "tolerance": "S\u23000.41",
+                "datums": [
+                    "D",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    1158,
+                    413,
+                    1488,
+                    473
+                ]
+            },
+            {
+                "symbol": "Straightness",
+                "tolerance": "\u25fb0.06 (L)",
+                "datums": [
+                    "C",
+                    "B",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    841,
+                    336,
+                    1231,
+                    396
+                ]
+            },
+            {
+                "symbol": "Profile of a Surface",
+                "tolerance": "0.42 (M)",
+                "datums": [
+                    "A",
+                    "F",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    110,
+                    461,
+                    500,
+                    521
+                ]
+            }
+        ]
+    }
+}

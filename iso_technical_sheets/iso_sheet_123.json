@@ -1,0 +1,88 @@
+{
+    "filename": "iso_sheet_123.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "0.35 (L)",
+                "datums": [
+                    "F",
+                    "A",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    562,
+                    286,
+                    952,
+                    346
+                ]
+            },
+            {
+                "symbol": "Angularity",
+                "tolerance": "\u23000.39",
+                "datums": [
+                    "B"
+                ],
+                "bbox_pixels": [
+                    468,
+                    155,
+                    738,
+                    215
+                ]
+            },
+            {
+                "symbol": "Straightness",
+                "tolerance": "S\u23000.43",
+                "datums": [
+                    "F",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    363,
+                    487,
+                    693,
+                    547
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "\u23000.46 (M)",
+                "datums": [
+                    "A",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    1109,
+                    301,
+                    1439,
+                    361
+                ]
+            },
+            {
+                "symbol": "Profile of a Line",
+                "tolerance": "\u23000.29 (L)",
+                "datums": [
+                    "F"
+                ],
+                "bbox_pixels": [
+                    550,
+                    593,
+                    820,
+                    653
+                ]
+            }
+        ]
+    }
+}

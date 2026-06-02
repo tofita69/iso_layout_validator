@@ -1,0 +1,102 @@
+{
+    "filename": "iso_sheet_24.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Profile of a Line",
+                "tolerance": "0.41",
+                "datums": [
+                    "B",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    207,
+                    238,
+                    537,
+                    298
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "\u23000.39",
+                "datums": [
+                    "A",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    1123,
+                    162,
+                    1453,
+                    222
+                ]
+            },
+            {
+                "symbol": "Concentricity",
+                "tolerance": "\u23000.23",
+                "datums": [
+                    "D"
+                ],
+                "bbox_pixels": [
+                    783,
+                    677,
+                    1053,
+                    737
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "\u23000.16 (L)",
+                "datums": [
+                    "C",
+                    "F",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    475,
+                    520,
+                    865,
+                    580
+                ]
+            },
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "0.47 (L)",
+                "datums": [
+                    "F",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    438,
+                    729,
+                    768,
+                    789
+                ]
+            },
+            {
+                "symbol": "Profile of a Line",
+                "tolerance": "0.39",
+                "datums": [
+                    "E"
+                ],
+                "bbox_pixels": [
+                    601,
+                    251,
+                    871,
+                    311
+                ]
+            }
+        ]
+    }
+}

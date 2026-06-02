@@ -1,0 +1,61 @@
+{
+    "filename": "iso_sheet_23.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Straightness",
+                "tolerance": "\u23000.47 (M)",
+                "datums": [
+                    "B"
+                ],
+                "bbox_pixels": [
+                    144,
+                    614,
+                    414,
+                    674
+                ]
+            },
+            {
+                "symbol": "Total Runout",
+                "tolerance": "\u23000.48",
+                "datums": [
+                    "D",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    788,
+                    265,
+                    1118,
+                    325
+                ]
+            },
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "\u23000.14",
+                "datums": [
+                    "F",
+                    "B",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    1006,
+                    448,
+                    1396,
+                    508
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "filename": "iso_sheet_96.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Concentricity",
+                "tolerance": "\u23000.47 (M)",
+                "datums": [
+                    "F",
+                    "B",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    120,
+                    345,
+                    510,
+                    405
+                ]
+            },
+            {
+                "symbol": "Perpendicularity",
+                "tolerance": "\u23000.20 (M)",
+                "datums": [
+                    "F"
+                ],
+                "bbox_pixels": [
+                    1072,
+                    541,
+                    1342,
+                    601
+                ]
+            },
+            {
+                "symbol": "Straightness",
+                "tolerance": "0.44 (M)",
+                "datums": [
+                    "A",
+                    "D",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    273,
+                    554,
+                    663,
+                    614
+                ]
+            },
+            {
+                "symbol": "Profile of a Surface",
+                "tolerance": "0.47 (L)",
+                "datums": [
+                    "C",
+                    "A",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    841,
+                    359,
+                    1231,
+                    419
+                ]
+            },
+            {
+                "symbol": "Profile of a Line",
+                "tolerance": "0.31 (M)",
+                "datums": [
+                    "E",
+                    "D",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    775,
+                    741,
+                    1165,
+                    801
+                ]
+            }
+        ]
+    }
+}

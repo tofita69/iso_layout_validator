@@ -1,0 +1,60 @@
+{
+    "filename": "iso_sheet_137.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Concentricity",
+                "tolerance": "0.38 (M)",
+                "datums": [
+                    "B",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    396,
+                    284,
+                    726,
+                    344
+                ]
+            },
+            {
+                "symbol": "Profile of a Surface",
+                "tolerance": "\u25fb0.32",
+                "datums": [
+                    "E",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    344,
+                    634,
+                    674,
+                    694
+                ]
+            },
+            {
+                "symbol": "Concentricity",
+                "tolerance": "S\u23000.48 (L)",
+                "datums": [
+                    "C"
+                ],
+                "bbox_pixels": [
+                    365,
+                    413,
+                    635,
+                    473
+                ]
+            }
+        ]
+    }
+}

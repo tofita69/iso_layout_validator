@@ -1,0 +1,103 @@
+{
+    "filename": "iso_sheet_140.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "0.22 (L)",
+                "datums": [
+                    "E",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    878,
+                    406,
+                    1208,
+                    466
+                ]
+            },
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "0.31 (M)",
+                "datums": [
+                    "D",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    911,
+                    125,
+                    1241,
+                    185
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "S\u23000.04 (L)",
+                "datums": [
+                    "A",
+                    "F",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    477,
+                    492,
+                    867,
+                    552
+                ]
+            },
+            {
+                "symbol": "Concentricity",
+                "tolerance": "\u23000.44",
+                "datums": [
+                    "A",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    157,
+                    346,
+                    487,
+                    406
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "0.05 (M)",
+                "datums": [
+                    "A"
+                ],
+                "bbox_pixels": [
+                    1197,
+                    257,
+                    1467,
+                    317
+                ]
+            },
+            {
+                "symbol": "Circularity",
+                "tolerance": "S\u23000.36 (L)",
+                "datums": [
+                    "C",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    922,
+                    544,
+                    1252,
+                    604
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,104 @@
+{
+    "filename": "iso_sheet_135.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Straightness",
+                "tolerance": "S\u23000.37",
+                "datums": [
+                    "C",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    487,
+                    672,
+                    817,
+                    732
+                ]
+            },
+            {
+                "symbol": "Concentricity",
+                "tolerance": "\u23000.38 (L)",
+                "datums": [
+                    "C",
+                    "F",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    472,
+                    337,
+                    862,
+                    397
+                ]
+            },
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "\u23000.16 (L)",
+                "datums": [
+                    "D",
+                    "C",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    215,
+                    107,
+                    605,
+                    167
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "S\u23000.04 (L)",
+                "datums": [
+                    "C",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    698,
+                    404,
+                    1028,
+                    464
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "\u23000.38 (L)",
+                "datums": [
+                    "B"
+                ],
+                "bbox_pixels": [
+                    209,
+                    551,
+                    479,
+                    611
+                ]
+            },
+            {
+                "symbol": "Angularity",
+                "tolerance": "0.08",
+                "datums": [
+                    "A",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    654,
+                    168,
+                    984,
+                    228
+                ]
+            }
+        ]
+    }
+}

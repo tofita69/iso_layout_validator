@@ -1,0 +1,75 @@
+{
+    "filename": "iso_sheet_76.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Profile of a Surface",
+                "tolerance": "0.48 (M)",
+                "datums": [
+                    "B"
+                ],
+                "bbox_pixels": [
+                    863,
+                    505,
+                    1133,
+                    565
+                ]
+            },
+            {
+                "symbol": "Perpendicularity",
+                "tolerance": "\u23000.48",
+                "datums": [
+                    "B",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    223,
+                    476,
+                    553,
+                    536
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "0.34",
+                "datums": [
+                    "D",
+                    "C",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    645,
+                    112,
+                    1035,
+                    172
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "\u23000.13 (L)",
+                "datums": [
+                    "C",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    555,
+                    674,
+                    885,
+                    734
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "filename": "iso_sheet_78.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Profile of a Surface",
+                "tolerance": "0.36",
+                "datums": [
+                    "C"
+                ],
+                "bbox_pixels": [
+                    1222,
+                    424,
+                    1492,
+                    484
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "0.24",
+                "datums": [
+                    "D"
+                ],
+                "bbox_pixels": [
+                    430,
+                    609,
+                    700,
+                    669
+                ]
+            },
+            {
+                "symbol": "Total Runout",
+                "tolerance": "0.21",
+                "datums": [
+                    "B"
+                ],
+                "bbox_pixels": [
+                    891,
+                    429,
+                    1161,
+                    489
+                ]
+            }
+        ]
+    }
+}

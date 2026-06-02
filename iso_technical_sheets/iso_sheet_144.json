@@ -1,0 +1,89 @@
+{
+    "filename": "iso_sheet_144.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Perpendicularity",
+                "tolerance": "\u23000.11",
+                "datums": [
+                    "E",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    352,
+                    495,
+                    682,
+                    555
+                ]
+            },
+            {
+                "symbol": "Straightness",
+                "tolerance": "\u23000.16",
+                "datums": [
+                    "A",
+                    "C",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    846,
+                    778,
+                    1236,
+                    838
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "0.38 (M)",
+                "datums": [
+                    "C",
+                    "D",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    366,
+                    734,
+                    756,
+                    794
+                ]
+            },
+            {
+                "symbol": "Straightness",
+                "tolerance": "\u23000.08",
+                "datums": [
+                    "C"
+                ],
+                "bbox_pixels": [
+                    352,
+                    177,
+                    622,
+                    237
+                ]
+            },
+            {
+                "symbol": "Straightness",
+                "tolerance": "\u23000.49 (L)",
+                "datums": [
+                    "D"
+                ],
+                "bbox_pixels": [
+                    236,
+                    374,
+                    506,
+                    434
+                ]
+            }
+        ]
+    }
+}

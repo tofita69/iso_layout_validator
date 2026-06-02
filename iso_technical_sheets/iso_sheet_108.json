@@ -1,0 +1,85 @@
+{
+    "filename": "iso_sheet_108.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Cylindricity",
+                "tolerance": "0.07",
+                "datums": [
+                    "F"
+                ],
+                "bbox_pixels": [
+                    149,
+                    291,
+                    419,
+                    351
+                ]
+            },
+            {
+                "symbol": "Total Runout",
+                "tolerance": "\u23000.42 (M)",
+                "datums": [
+                    "F"
+                ],
+                "bbox_pixels": [
+                    439,
+                    549,
+                    709,
+                    609
+                ]
+            },
+            {
+                "symbol": "Profile of a Surface",
+                "tolerance": "0.39 (L)",
+                "datums": [
+                    "B"
+                ],
+                "bbox_pixels": [
+                    176,
+                    478,
+                    446,
+                    538
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "\u23000.23",
+                "datums": [
+                    "E",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    605,
+                    290,
+                    935,
+                    350
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "S\u23000.41 (M)",
+                "datums": [
+                    "E"
+                ],
+                "bbox_pixels": [
+                    1208,
+                    770,
+                    1478,
+                    830
+                ]
+            }
+        ]
+    }
+}

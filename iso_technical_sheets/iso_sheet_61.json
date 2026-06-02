@@ -1,0 +1,105 @@
+{
+    "filename": "iso_sheet_61.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "S\u23000.49",
+                "datums": [
+                    "A",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    782,
+                    133,
+                    1112,
+                    193
+                ]
+            },
+            {
+                "symbol": "Total Runout",
+                "tolerance": "S\u23000.50",
+                "datums": [
+                    "D",
+                    "E",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    144,
+                    270,
+                    534,
+                    330
+                ]
+            },
+            {
+                "symbol": "Profile of a Line",
+                "tolerance": "\u23000.20 (M)",
+                "datums": [
+                    "E",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    289,
+                    626,
+                    619,
+                    686
+                ]
+            },
+            {
+                "symbol": "Circularity",
+                "tolerance": "\u23000.46 (L)",
+                "datums": [
+                    "E",
+                    "F",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    874,
+                    582,
+                    1264,
+                    642
+                ]
+            },
+            {
+                "symbol": "Cylindricity",
+                "tolerance": "0.28 (M)",
+                "datums": [
+                    "E",
+                    "F",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    377,
+                    375,
+                    767,
+                    435
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "\u23000.10 (M)",
+                "datums": [
+                    "C"
+                ],
+                "bbox_pixels": [
+                    340,
+                    207,
+                    610,
+                    267
+                ]
+            }
+        ]
+    }
+}

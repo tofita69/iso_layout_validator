@@ -1,0 +1,99 @@
+{
+    "filename": "iso_sheet_7.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Profile of a Surface",
+                "tolerance": "\u23000.04 (L)",
+                "datums": [
+                    "D"
+                ],
+                "bbox_pixels": [
+                    811,
+                    600,
+                    1081,
+                    660
+                ]
+            },
+            {
+                "symbol": "Concentricity",
+                "tolerance": "\u23000.41",
+                "datums": [
+                    "C",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    340,
+                    177,
+                    670,
+                    237
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "\u25fb0.19",
+                "datums": [
+                    "C",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    491,
+                    486,
+                    821,
+                    546
+                ]
+            },
+            {
+                "symbol": "Angularity",
+                "tolerance": "0.19",
+                "datums": [
+                    "D"
+                ],
+                "bbox_pixels": [
+                    633,
+                    704,
+                    903,
+                    764
+                ]
+            },
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "0.45 (L)",
+                "datums": [
+                    "B"
+                ],
+                "bbox_pixels": [
+                    937,
+                    152,
+                    1207,
+                    212
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "0.47",
+                "datums": [
+                    "D"
+                ],
+                "bbox_pixels": [
+                    216,
+                    696,
+                    486,
+                    756
+                ]
+            }
+        ]
+    }
+}

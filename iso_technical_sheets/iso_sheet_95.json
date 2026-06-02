@@ -1,0 +1,87 @@
+{
+    "filename": "iso_sheet_95.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Position",
+                "tolerance": "0.08 (L)",
+                "datums": [
+                    "D"
+                ],
+                "bbox_pixels": [
+                    1080,
+                    733,
+                    1350,
+                    793
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "\u23000.45 (L)",
+                "datums": [
+                    "E",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    1135,
+                    451,
+                    1465,
+                    511
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "\u23000.30 (M)",
+                "datums": [
+                    "D"
+                ],
+                "bbox_pixels": [
+                    517,
+                    126,
+                    787,
+                    186
+                ]
+            },
+            {
+                "symbol": "Angularity",
+                "tolerance": "0.20",
+                "datums": [
+                    "A",
+                    "E",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    637,
+                    326,
+                    1027,
+                    386
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "0.44 (M)",
+                "datums": [
+                    "A"
+                ],
+                "bbox_pixels": [
+                    309,
+                    515,
+                    579,
+                    575
+                ]
+            }
+        ]
+    }
+}

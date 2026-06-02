@@ -1,0 +1,90 @@
+{
+    "filename": "iso_sheet_88.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Circularity",
+                "tolerance": "0.34 (M)",
+                "datums": [
+                    "D",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    254,
+                    400,
+                    584,
+                    460
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "\u23000.34 (L)",
+                "datums": [
+                    "D",
+                    "C",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    141,
+                    594,
+                    531,
+                    654
+                ]
+            },
+            {
+                "symbol": "Cylindricity",
+                "tolerance": "0.24 (L)",
+                "datums": [
+                    "B",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    625,
+                    178,
+                    955,
+                    238
+                ]
+            },
+            {
+                "symbol": "Perpendicularity",
+                "tolerance": "\u23000.38 (M)",
+                "datums": [
+                    "B",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    767,
+                    523,
+                    1097,
+                    583
+                ]
+            },
+            {
+                "symbol": "Total Runout",
+                "tolerance": "0.34",
+                "datums": [
+                    "B",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    150,
+                    521,
+                    480,
+                    581
+                ]
+            }
+        ]
+    }
+}

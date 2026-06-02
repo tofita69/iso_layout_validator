@@ -1,0 +1,87 @@
+{
+    "filename": "iso_sheet_122.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Total Runout",
+                "tolerance": "0.12 (M)",
+                "datums": [
+                    "A"
+                ],
+                "bbox_pixels": [
+                    417,
+                    503,
+                    687,
+                    563
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "0.34 (M)",
+                "datums": [
+                    "E",
+                    "B",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    862,
+                    664,
+                    1252,
+                    724
+                ]
+            },
+            {
+                "symbol": "Angularity",
+                "tolerance": "\u23000.22 (L)",
+                "datums": [
+                    "F",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    824,
+                    224,
+                    1154,
+                    284
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "\u23000.37",
+                "datums": [
+                    "D"
+                ],
+                "bbox_pixels": [
+                    1162,
+                    179,
+                    1432,
+                    239
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "\u25fb0.36",
+                "datums": [
+                    "C"
+                ],
+                "bbox_pixels": [
+                    749,
+                    461,
+                    1019,
+                    521
+                ]
+            }
+        ]
+    }
+}
