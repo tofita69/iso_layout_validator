@@ -1,0 +1,104 @@
+{
+    "filename": "iso_sheet_126.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Circularity",
+                "tolerance": "\u23000.01",
+                "datums": [
+                    "B",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    346,
+                    285,
+                    676,
+                    345
+                ]
+            },
+            {
+                "symbol": "Total Runout",
+                "tolerance": "0.20 (M)",
+                "datums": [
+                    "E"
+                ],
+                "bbox_pixels": [
+                    890,
+                    204,
+                    1160,
+                    264
+                ]
+            },
+            {
+                "symbol": "Profile of a Surface",
+                "tolerance": "\u23000.02 (M)",
+                "datums": [
+                    "B",
+                    "D",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    1067,
+                    622,
+                    1457,
+                    682
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "0.22",
+                "datums": [
+                    "A"
+                ],
+                "bbox_pixels": [
+                    433,
+                    657,
+                    703,
+                    717
+                ]
+            },
+            {
+                "symbol": "Perpendicularity",
+                "tolerance": "\u23000.39",
+                "datums": [
+                    "C",
+                    "F",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    746,
+                    308,
+                    1136,
+                    368
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "S\u23000.12",
+                "datums": [
+                    "F",
+                    "E",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    989,
+                    389,
+                    1379,
+                    449
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "filename": "iso_sheet_19.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Profile of a Surface",
+                "tolerance": "0.42 (L)",
+                "datums": [
+                    "A",
+                    "B",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    376,
+                    246,
+                    766,
+                    306
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "0.31 (M)",
+                "datums": [
+                    "C",
+                    "F",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    576,
+                    509,
+                    966,
+                    569
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "0.07",
+                "datums": [
+                    "A",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    340,
+                    178,
+                    670,
+                    238
+                ]
+            },
+            {
+                "symbol": "Cylindricity",
+                "tolerance": "\u23000.48 (L)",
+                "datums": [
+                    "E",
+                    "B",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    870,
+                    735,
+                    1260,
+                    795
+                ]
+            },
+            {
+                "symbol": "Perpendicularity",
+                "tolerance": "\u23000.19 (L)",
+                "datums": [
+                    "D",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    126,
+                    458,
+                    456,
+                    518
+                ]
+            },
+            {
+                "symbol": "Total Runout",
+                "tolerance": "0.41 (L)",
+                "datums": [
+                    "C",
+                    "B",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    793,
+                    190,
+                    1183,
+                    250
+                ]
+            }
+        ]
+    }
+}

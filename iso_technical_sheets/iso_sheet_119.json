@@ -1,0 +1,61 @@
+{
+    "filename": "iso_sheet_119.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Circularity",
+                "tolerance": "\u23000.36",
+                "datums": [
+                    "F",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    891,
+                    785,
+                    1221,
+                    845
+                ]
+            },
+            {
+                "symbol": "Cylindricity",
+                "tolerance": "0.49 (L)",
+                "datums": [
+                    "F",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    817,
+                    465,
+                    1147,
+                    525
+                ]
+            },
+            {
+                "symbol": "Perpendicularity",
+                "tolerance": "0.26 (M)",
+                "datums": [
+                    "A",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    466,
+                    362,
+                    796,
+                    422
+                ]
+            }
+        ]
+    }
+}

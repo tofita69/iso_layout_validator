@@ -1,0 +1,88 @@
+{
+    "filename": "iso_sheet_39.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Angularity",
+                "tolerance": "\u23000.47",
+                "datums": [
+                    "E",
+                    "B",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    942,
+                    655,
+                    1332,
+                    715
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "\u23000.12",
+                "datums": [
+                    "F",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    575,
+                    704,
+                    905,
+                    764
+                ]
+            },
+            {
+                "symbol": "Perpendicularity",
+                "tolerance": "\u25fb0.20 (M)",
+                "datums": [
+                    "C"
+                ],
+                "bbox_pixels": [
+                    447,
+                    472,
+                    717,
+                    532
+                ]
+            },
+            {
+                "symbol": "Concentricity",
+                "tolerance": "\u25fb0.38 (L)",
+                "datums": [
+                    "F",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    107,
+                    283,
+                    437,
+                    343
+                ]
+            },
+            {
+                "symbol": "Profile of a Line",
+                "tolerance": "S\u23000.39",
+                "datums": [
+                    "A"
+                ],
+                "bbox_pixels": [
+                    220,
+                    782,
+                    490,
+                    842
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+path: C:\Users\yassine.jaadan\iso_layout_validator\data\yolo_dataset # Chemin absolu requis
+train: images/train
+val: images/val
+
+names:
+  0: title_block
+  1: notes
+  2: gdt_feature

@@ -1,0 +1,105 @@
+{
+    "filename": "iso_sheet_124.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Cylindricity",
+                "tolerance": "\u23000.18 (M)",
+                "datums": [
+                    "E",
+                    "A",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    246,
+                    542,
+                    636,
+                    602
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "S\u23000.17 (M)",
+                "datums": [
+                    "F"
+                ],
+                "bbox_pixels": [
+                    733,
+                    414,
+                    1003,
+                    474
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "0.46 (L)",
+                "datums": [
+                    "C",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    1047,
+                    351,
+                    1377,
+                    411
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "\u23000.50 (L)",
+                "datums": [
+                    "B",
+                    "A",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    886,
+                    575,
+                    1276,
+                    635
+                ]
+            },
+            {
+                "symbol": "Total Runout",
+                "tolerance": "\u23000.07 (L)",
+                "datums": [
+                    "D",
+                    "E",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    895,
+                    774,
+                    1285,
+                    834
+                ]
+            },
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "\u23000.32 (M)",
+                "datums": [
+                    "D",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    823,
+                    249,
+                    1153,
+                    309
+                ]
+            }
+        ]
+    }
+}

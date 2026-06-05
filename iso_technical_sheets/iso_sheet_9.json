@@ -1,0 +1,89 @@
+{
+    "filename": "iso_sheet_9.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Circularity",
+                "tolerance": "0.47 (L)",
+                "datums": [
+                    "A",
+                    "E",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    275,
+                    294,
+                    665,
+                    354
+                ]
+            },
+            {
+                "symbol": "Concentricity",
+                "tolerance": "\u23000.08",
+                "datums": [
+                    "A"
+                ],
+                "bbox_pixels": [
+                    852,
+                    416,
+                    1122,
+                    476
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "\u23000.17 (M)",
+                "datums": [
+                    "C",
+                    "A",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    348,
+                    423,
+                    738,
+                    483
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "0.14",
+                "datums": [
+                    "D"
+                ],
+                "bbox_pixels": [
+                    333,
+                    648,
+                    603,
+                    708
+                ]
+            },
+            {
+                "symbol": "Cylindricity",
+                "tolerance": "\u23000.06",
+                "datums": [
+                    "F",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    532,
+                    734,
+                    862,
+                    794
+                ]
+            }
+        ]
+    }
+}

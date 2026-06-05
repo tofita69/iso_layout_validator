@@ -1,0 +1,90 @@
+{
+    "filename": "iso_sheet_33.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Angularity",
+                "tolerance": "0.34 (L)",
+                "datums": [
+                    "B",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    375,
+                    101,
+                    705,
+                    161
+                ]
+            },
+            {
+                "symbol": "Profile of a Surface",
+                "tolerance": "\u23000.46 (L)",
+                "datums": [
+                    "E"
+                ],
+                "bbox_pixels": [
+                    985,
+                    616,
+                    1255,
+                    676
+                ]
+            },
+            {
+                "symbol": "Profile of a Surface",
+                "tolerance": "0.34",
+                "datums": [
+                    "A",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    145,
+                    276,
+                    475,
+                    336
+                ]
+            },
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "0.19 (L)",
+                "datums": [
+                    "A",
+                    "D",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    549,
+                    230,
+                    939,
+                    290
+                ]
+            },
+            {
+                "symbol": "Concentricity",
+                "tolerance": "S\u23000.09 (M)",
+                "datums": [
+                    "C",
+                    "F",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    933,
+                    737,
+                    1323,
+                    797
+                ]
+            }
+        ]
+    }
+}

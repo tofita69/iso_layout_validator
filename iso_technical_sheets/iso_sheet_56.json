@@ -1,0 +1,87 @@
+{
+    "filename": "iso_sheet_56.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Angularity",
+                "tolerance": "0.18 (L)",
+                "datums": [
+                    "B"
+                ],
+                "bbox_pixels": [
+                    198,
+                    243,
+                    468,
+                    303
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "\u23000.04 (M)",
+                "datums": [
+                    "C",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    204,
+                    315,
+                    534,
+                    375
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "\u23000.49 (M)",
+                "datums": [
+                    "C",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    561,
+                    558,
+                    891,
+                    618
+                ]
+            },
+            {
+                "symbol": "Perpendicularity",
+                "tolerance": "0.07 (M)",
+                "datums": [
+                    "C"
+                ],
+                "bbox_pixels": [
+                    804,
+                    665,
+                    1074,
+                    725
+                ]
+            },
+            {
+                "symbol": "Total Runout",
+                "tolerance": "0.06 (L)",
+                "datums": [
+                    "D",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    356,
+                    706,
+                    686,
+                    766
+                ]
+            }
+        ]
+    }
+}

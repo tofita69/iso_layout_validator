@@ -1,0 +1,102 @@
+{
+    "filename": "iso_sheet_75.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "\u23000.17 (L)",
+                "datums": [
+                    "A",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    958,
+                    367,
+                    1288,
+                    427
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "\u23000.34 (L)",
+                "datums": [
+                    "B"
+                ],
+                "bbox_pixels": [
+                    983,
+                    110,
+                    1253,
+                    170
+                ]
+            },
+            {
+                "symbol": "Total Runout",
+                "tolerance": "0.46",
+                "datums": [
+                    "B",
+                    "D",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    1057,
+                    514,
+                    1447,
+                    574
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "\u23000.21",
+                "datums": [
+                    "D",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    1006,
+                    724,
+                    1336,
+                    784
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "0.40 (L)",
+                "datums": [
+                    "B"
+                ],
+                "bbox_pixels": [
+                    242,
+                    183,
+                    512,
+                    243
+                ]
+            },
+            {
+                "symbol": "Perpendicularity",
+                "tolerance": "\u23000.49",
+                "datums": [
+                    "E",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    981,
+                    592,
+                    1311,
+                    652
+                ]
+            }
+        ]
+    }
+}

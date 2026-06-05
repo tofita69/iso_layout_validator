@@ -1,0 +1,202 @@
+Checking the architecture skill guidance and current repo to shape a precise validator design.
+
+Searched for regex `layout|validator|validate|ISO|title_block|gdt_feature|notes|YOLO|yolo11n|models/weights` (`**/*.{py,md,yaml,toml,csv}`), 200 results
+
+I found the architecture skill in the manifest; now I’m confirming the actual file path in the workspace.
+
+Read [](file:///c%3A/Users/yassine.jaadan/iso_layout_validator/_bmad/bmm/3-solutioning)
+
+Read [](file:///c%3A/Users/yassine.jaadan/iso_layout_validator/src/perception/vision_module.py)
+
+Read [](file:///c%3A/Users/yassine.jaadan/iso_layout_validator/src/train_yolo.py)
+
+## Architecture recommendation for `iso_layout_validator`
+
+### 1. System goal
+Build a deterministic ISO drawing layout validator that:
+- ingests an ISO drawing image
+- locates key layout regions
+- verifies ISO layout rules
+- returns structured pass/fail findings
+
+---
+
+## 2. Current repo fit
+
+### Existing components
+- data_engine_v2.py
+  - synthetic ISO sheet generator
+  - produces ground-truth boxes for `title_block`, `notes`, `gdt_feature`
+- prepare_dataset.py
+  - converts generated JSON into YOLO dataset labels
+- train_yolo.py
+  - trains a YOLOv11 model on dataset.yaml
+- vision_module.py
+  - loads `yolo11n-obb.pt`
+  - performs YOLO inference and heuristic zone classification
+
+### Key starting insight
+This repo already has a viable detection/data pipeline. The missing piece is a dedicated validation layer that converts detections into ISO layout rule checks.
+
+---
+
+## 3. Proposed architecture
+
+### A. Ingestion layer
+Responsibility:
+- accept input image path or image bytes
+- normalize image size / resolution if needed
+
+Candidate module:
+- main.py
+- `src/ingest.py`
+
+### B. Detection layer
+Responsibility:
+- locate blocks/zones in the drawing
+- output class + bbox + confidence
+
+Candidate module:
+- vision_module.py
+
+Design notes:
+- Continue using YOLO for block detection
+- Prefer model trained on your synthetic dataset
+- For structural zone layout, axis-aligned boxes are sufficient
+- If rotated components matter later, support OBB via `yolo11n-obb.pt`
+
+### C. Zone normalizer / classifier
+Responsibility:
+- map raw model class IDs to semantic layout zones
+- compute normalized geometry
+- optionally label ambiguous detections
+
+Example semantic roles:
+- `title_block`
+- `notes`
+- `gdt_feature`
+- `revision_table`
+- `drawing_area`
+- `unknown`
+
+Candidate module:
+- `src/perception/zone_classifier.py`
+
+### D. Rule engine
+Responsibility:
+- apply explicit layout rules against detected zones
+- detect missing sections, wrong placement, illegal overlap, invalid scale
+
+Suggested rule categories:
+- Required presence
+  - `title_block` exists
+  - `notes` exists
+  - at least one `gdt_feature`
+- Relative placement
+  - title block bottom-right
+  - notes left-side / margin area
+  - GDT features in the drawing body, not inside title block
+- Geometric constraints
+  - area ratio thresholds
+  - aspect ratio expected ranges
+  - spacing / margin boundaries
+- Structural consistency
+  - no overlapping required zones
+  - all GDT frames aligned with the drawing area
+  - title block size similar to training distribution
+
+Candidate module:
+- `src/layout_validator.py`
+- `src/validation_rules.py`
+
+### E. Report generator
+Responsibility:
+- produce human-readable validation output
+- produce structured JSON for automation
+- include:
+  - overall status
+  - failed rule list
+  - bounding boxes
+  - confidence
+  - remediation advice
+
+Candidate module:
+- `src/reporting.py`
+
+### F. Feedback / data loop
+Responsibility:
+- log validation failures
+- use failure cases to augment synthetic dataset
+- retrain model if detection recall degrades
+
+Candidate module:
+- `src/feedback.py`
+- or integrate into main.py
+
+---
+
+## 4. Recommended pipeline
+
+1. Generate synthetic ISO drawings
+   - `python src/data_engine_v2.py`
+2. Build YOLO dataset
+   - `python src/prepare_dataset.py`
+3. Train detection model
+   - `python src/train_yolo.py`
+4. Run inference
+   - `python src/perception/vision_module.py`
+5. Validate layout
+   - new `src/layout_validator.py`
+
+---
+
+## 5. Implementation structure
+
+### New files to add
+- `src/layout_validator.py`
+- `src/validation_rules.py`
+- `src/reporting.py`
+- `src/config/validation_rules.yaml` or `src/config/validation_rules.json`
+
+### Example responsibility mapping
+- vision_module.py
+  - detection + cropping
+- `src/validation_rules.py`
+  - rule definitions and matchers
+- `src/layout_validator.py`
+  - orchestrates detection → classification → rules
+- `src/reporting.py`
+  - builds summary / JSON report
+
+---
+
+## 6. Quality and trade-offs
+
+### Strongest design choice
+- keep detection and validation separate
+- this makes rules explicit and easy to extend
+
+### Minimal viable validator
+- start with:
+  - required-block presence
+  - title block bottom-right
+  - notes left-side
+  - no overlap between `title_block` and `notes`
+  - GDT zones inside drawing area
+
+### If you want higher confidence later
+- add:
+  - semantic OCR checks for title block field labels
+  - line / grid inspection for ISO margins
+  - rotated box support for non-axis-aligned GDT annotations
+
+---
+
+## 7. Recommended next step
+
+Create the architecture module now:
+- `src/layout_validator.py`
+- plus a config-driven rule set
+- integrate with vision_module.py
+
+If you want, I can now generate the actual `src/layout_validator.py` and `src/validation_rules.py` implementation for this repo.

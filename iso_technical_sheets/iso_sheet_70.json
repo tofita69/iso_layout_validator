@@ -1,0 +1,105 @@
+{
+    "filename": "iso_sheet_70.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Straightness",
+                "tolerance": "S\u23000.05",
+                "datums": [
+                    "E",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    232,
+                    579,
+                    562,
+                    639
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "\u25fb0.37",
+                "datums": [
+                    "C",
+                    "F",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    239,
+                    754,
+                    629,
+                    814
+                ]
+            },
+            {
+                "symbol": "Circularity",
+                "tolerance": "0.30 (M)",
+                "datums": [
+                    "E"
+                ],
+                "bbox_pixels": [
+                    1056,
+                    427,
+                    1326,
+                    487
+                ]
+            },
+            {
+                "symbol": "Angularity",
+                "tolerance": "0.43 (M)",
+                "datums": [
+                    "B",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    428,
+                    656,
+                    758,
+                    716
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "0.42 (M)",
+                "datums": [
+                    "D",
+                    "E",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    952,
+                    294,
+                    1342,
+                    354
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "0.12 (L)",
+                "datums": [
+                    "C",
+                    "D",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    832,
+                    361,
+                    1222,
+                    421
+                ]
+            }
+        ]
+    }
+}

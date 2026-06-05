@@ -1,0 +1,88 @@
+{
+    "filename": "iso_sheet_38.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "\u23000.29",
+                "datums": [
+                    "C"
+                ],
+                "bbox_pixels": [
+                    112,
+                    351,
+                    382,
+                    411
+                ]
+            },
+            {
+                "symbol": "Profile of a Line",
+                "tolerance": "0.21 (M)",
+                "datums": [
+                    "B",
+                    "D",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    530,
+                    166,
+                    920,
+                    226
+                ]
+            },
+            {
+                "symbol": "Profile of a Line",
+                "tolerance": "\u25fb0.31",
+                "datums": [
+                    "A"
+                ],
+                "bbox_pixels": [
+                    950,
+                    390,
+                    1220,
+                    450
+                ]
+            },
+            {
+                "symbol": "Profile of a Surface",
+                "tolerance": "0.06",
+                "datums": [
+                    "E",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    584,
+                    232,
+                    914,
+                    292
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "0.47 (L)",
+                "datums": [
+                    "D",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    924,
+                    652,
+                    1254,
+                    712
+                ]
+            }
+        ]
+    }
+}

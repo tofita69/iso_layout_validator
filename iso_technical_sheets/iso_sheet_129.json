@@ -1,0 +1,87 @@
+{
+    "filename": "iso_sheet_129.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Flatness",
+                "tolerance": "0.23 (M)",
+                "datums": [
+                    "F",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    350,
+                    388,
+                    680,
+                    448
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "\u23000.48 (M)",
+                "datums": [
+                    "A"
+                ],
+                "bbox_pixels": [
+                    724,
+                    346,
+                    994,
+                    406
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "S\u23000.18",
+                "datums": [
+                    "C"
+                ],
+                "bbox_pixels": [
+                    233,
+                    611,
+                    503,
+                    671
+                ]
+            },
+            {
+                "symbol": "Profile of a Surface",
+                "tolerance": "\u23000.04",
+                "datums": [
+                    "E"
+                ],
+                "bbox_pixels": [
+                    1089,
+                    517,
+                    1359,
+                    577
+                ]
+            },
+            {
+                "symbol": "Profile of a Line",
+                "tolerance": "0.31 (M)",
+                "datums": [
+                    "D",
+                    "C",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    630,
+                    453,
+                    1020,
+                    513
+                ]
+            }
+        ]
+    }
+}

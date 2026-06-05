@@ -1,0 +1,102 @@
+{
+    "filename": "iso_sheet_0.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Straightness",
+                "tolerance": "\u25fb0.19 (L)",
+                "datums": [
+                    "A",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    508,
+                    196,
+                    838,
+                    256
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "0.11",
+                "datums": [
+                    "F"
+                ],
+                "bbox_pixels": [
+                    133,
+                    603,
+                    403,
+                    663
+                ]
+            },
+            {
+                "symbol": "Angularity",
+                "tolerance": "\u23000.49 (M)",
+                "datums": [
+                    "B"
+                ],
+                "bbox_pixels": [
+                    205,
+                    212,
+                    475,
+                    272
+                ]
+            },
+            {
+                "symbol": "Angularity",
+                "tolerance": "0.33 (M)",
+                "datums": [
+                    "B",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    1062,
+                    639,
+                    1392,
+                    699
+                ]
+            },
+            {
+                "symbol": "Angularity",
+                "tolerance": "\u23000.45 (L)",
+                "datums": [
+                    "E",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    572,
+                    357,
+                    902,
+                    417
+                ]
+            },
+            {
+                "symbol": "Straightness",
+                "tolerance": "\u23000.19 (M)",
+                "datums": [
+                    "B",
+                    "F",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    551,
+                    729,
+                    941,
+                    789
+                ]
+            }
+        ]
+    }
+}

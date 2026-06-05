@@ -1,0 +1,88 @@
+{
+    "filename": "iso_sheet_47.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "\u23000.24 (M)",
+                "datums": [
+                    "B",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    548,
+                    567,
+                    878,
+                    627
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "\u23000.34",
+                "datums": [
+                    "D",
+                    "B",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    1033,
+                    362,
+                    1423,
+                    422
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "\u23000.33 (M)",
+                "datums": [
+                    "D",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    1116,
+                    473,
+                    1446,
+                    533
+                ]
+            },
+            {
+                "symbol": "Total Runout",
+                "tolerance": "\u25fb0.49 (L)",
+                "datums": [
+                    "C"
+                ],
+                "bbox_pixels": [
+                    1029,
+                    701,
+                    1299,
+                    761
+                ]
+            },
+            {
+                "symbol": "Circularity",
+                "tolerance": "\u23000.13 (L)",
+                "datums": [
+                    "B"
+                ],
+                "bbox_pixels": [
+                    724,
+                    149,
+                    994,
+                    209
+                ]
+            }
+        ]
+    }
+}

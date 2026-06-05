@@ -1,0 +1,89 @@
+{
+    "filename": "iso_sheet_40.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Flatness",
+                "tolerance": "\u23000.26 (M)",
+                "datums": [
+                    "B",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    821,
+                    653,
+                    1151,
+                    713
+                ]
+            },
+            {
+                "symbol": "Angularity",
+                "tolerance": "0.36",
+                "datums": [
+                    "F",
+                    "A",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    176,
+                    228,
+                    566,
+                    288
+                ]
+            },
+            {
+                "symbol": "Position",
+                "tolerance": "\u23000.32 (L)",
+                "datums": [
+                    "F",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    746,
+                    773,
+                    1076,
+                    833
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "0.24 (L)",
+                "datums": [
+                    "F"
+                ],
+                "bbox_pixels": [
+                    931,
+                    537,
+                    1201,
+                    597
+                ]
+            },
+            {
+                "symbol": "Concentricity",
+                "tolerance": "0.09 (L)",
+                "datums": [
+                    "A",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    350,
+                    515,
+                    680,
+                    575
+                ]
+            }
+        ]
+    }
+}

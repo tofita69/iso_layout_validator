@@ -1,0 +1,103 @@
+{
+    "filename": "iso_sheet_35.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Total Runout",
+                "tolerance": "\u25fb0.13 (L)",
+                "datums": [
+                    "F",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    341,
+                    506,
+                    671,
+                    566
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "\u25fb0.27",
+                "datums": [
+                    "B",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    976,
+                    517,
+                    1306,
+                    577
+                ]
+            },
+            {
+                "symbol": "Cylindricity",
+                "tolerance": "\u25fb0.43 (L)",
+                "datums": [
+                    "D",
+                    "C",
+                    "B"
+                ],
+                "bbox_pixels": [
+                    588,
+                    275,
+                    978,
+                    335
+                ]
+            },
+            {
+                "symbol": "Angularity",
+                "tolerance": "\u23000.33",
+                "datums": [
+                    "C",
+                    "F"
+                ],
+                "bbox_pixels": [
+                    668,
+                    635,
+                    998,
+                    695
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "\u23000.38 (L)",
+                "datums": [
+                    "D",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    853,
+                    439,
+                    1183,
+                    499
+                ]
+            },
+            {
+                "symbol": "Symmetry",
+                "tolerance": "S\u23000.01 (M)",
+                "datums": [
+                    "A"
+                ],
+                "bbox_pixels": [
+                    691,
+                    133,
+                    961,
+                    193
+                ]
+            }
+        ]
+    }
+}

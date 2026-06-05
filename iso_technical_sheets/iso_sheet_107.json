@@ -1,0 +1,89 @@
+{
+    "filename": "iso_sheet_107.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Flatness",
+                "tolerance": "S\u23000.11 (M)",
+                "datums": [
+                    "E",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    821,
+                    308,
+                    1151,
+                    368
+                ]
+            },
+            {
+                "symbol": "Total Runout",
+                "tolerance": "0.47",
+                "datums": [
+                    "D",
+                    "C",
+                    "E"
+                ],
+                "bbox_pixels": [
+                    748,
+                    518,
+                    1138,
+                    578
+                ]
+            },
+            {
+                "symbol": "Parallelism",
+                "tolerance": "0.17 (M)",
+                "datums": [
+                    "C"
+                ],
+                "bbox_pixels": [
+                    259,
+                    690,
+                    529,
+                    750
+                ]
+            },
+            {
+                "symbol": "Flatness",
+                "tolerance": "S\u23000.35",
+                "datums": [
+                    "F"
+                ],
+                "bbox_pixels": [
+                    407,
+                    619,
+                    677,
+                    679
+                ]
+            },
+            {
+                "symbol": "Cylindricity",
+                "tolerance": "\u23000.49",
+                "datums": [
+                    "B",
+                    "C",
+                    "A"
+                ],
+                "bbox_pixels": [
+                    467,
+                    218,
+                    857,
+                    278
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "filename": "iso_sheet_8.png",
+    "components": {
+        "title_block": [
+            800,
+            1000,
+            1560,
+            1160
+        ],
+        "notes": [
+            100,
+            960,
+            480,
+            1140
+        ],
+        "gdt_features": [
+            {
+                "symbol": "Total Runout",
+                "tolerance": "\u23000.31",
+                "datums": [
+                    "E"
+                ],
+                "bbox_pixels": [
+                    375,
+                    768,
+                    645,
+                    828
+                ]
+            },
+            {
+                "symbol": "Perpendicularity",
+                "tolerance": "\u23000.42",
+                "datums": [
+                    "A"
+                ],
+                "bbox_pixels": [
+                    917,
+                    325,
+                    1187,
+                    385
+                ]
+            },
+            {
+                "symbol": "Cylindricity",
+                "tolerance": "0.05 (L)",
+                "datums": [
+                    "B",
+                    "C"
+                ],
+                "bbox_pixels": [
+                    997,
+                    501,
+                    1327,
+                    561
+                ]
+            },
+            {
+                "symbol": "Circularity",
+                "tolerance": "0.49 (M)",
+                "datums": [
+                    "B",
+                    "D"
+                ],
+                "bbox_pixels": [
+                    322,
+                    213,
+                    652,
+                    273
+                ]
+            },
+            {
+                "symbol": "Circular Runout",
+                "tolerance": "\u23000.18 (M)",
+                "datums": [
+                    "D"
+                ],
+                "bbox_pixels": [
+                    269,
+                    140,
+                    539,
+                    200
+                ]
+            }
+        ]
+    }
+}
